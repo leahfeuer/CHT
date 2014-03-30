@@ -5,50 +5,57 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="CHTstylesheet.css">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/foundation.css">
-   <script src="js/vendor/modernizr.js"></script>
+  <link rel="stylesheet" href="foundation/css/normalize.css">
+  <link rel="stylesheet" href="foundation/css/foundation.css">
+   <script src="foundation/js/vendor/modernizr.js"></script>
 
 </head>
 <body>
 
-<!--add container class back -->
-
-
+<!--add container class back ?-->
 
 <div data-magellan-expedition="fixed" class="mynav">
 	<h1> Cobble Hill Therapy </h1>
-  <dl class="sub-nav">
-    <dd data-magellan-arrival="build"><a href="#about">About</a></dd>
-    <dd data-magellan-arrival="js"><a href="#jess">Jessica Vogel</a></dd>
-    <dd data-magellan-arrival="js"><a href="#appointments">Appointments</a></dd>
+  <dl id="magellanTopNav" class="sub-nav">
+    <dd data-magellan-arrival="about">
+    	<a href="#about">About</a>
+    </dd>
+    <dd data-magellan-arrival="jess">
+    	<a href="#jess">Jessica Vogel</a>
+    </dd>
+    <dd data-magellan-arrival="appointments">
+    	<a href="#appointments">Appointments</a>
+    </dd>
   </dl>
 </div>
 
-<div class="row" >
-<div class="small-10 small-centered columns full-height">
 <a name="about"></a>
-<h3 data-magellan-destination="about">
+<div class="row" data-magellan-destination="about">
+<div class="small-10 small-centered columns full-height">
+<h2> About </h2>
+<h3 class="content">
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium risus ac condimentum tempus. Etiam consequat sapien sit amet eros placerat consequat. Donec convallis nulla magna, ut interdum nunc rhoncus tempor. Maecenas facilisis nisl sit amet orci sodales malesuada. Nam sodales vel lorem id iaculis. Ut imperdiet, neque posuere posuere gravida, urna nibh interdum odio, et congue orci leo id est. Nulla metus risus, dignissim sed odio faucibus, accumsan varius sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
 </h3>
 </br>
 </div>
 </div>
 
-<div class="row">
-<div class="small-10 small-centered columns full-height">
 <a name="jess"></a>
-<h3 data-magellan-destination="jess">
+<div class="row" data-magellan-destination="jess" >
+<div class="small-10 small-centered columns full-height">
+<h2> Jess </h2>
+<h3>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium risus ac condimentum tempus. Etiam consequat sapien sit amet eros placerat consequat. Donec convallis nulla magna, ut interdum nunc rhoncus tempor. Maecenas facilisis nisl sit amet orci sodales malesuada. Nam sodales vel lorem id iaculis. Ut imperdiet, neque posuere posuere gravida, urna nibh interdum odio, et congue orci leo id est. Nulla metus risus, dignissim sed odio faucibus, accumsan varius sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
 </h3>
 </br>
 </div>
 </div>
 
-<div class="row" >
-<div class="small-10 small-centered columns full-height">
 <a name="appointments"></a>
-<h3 data-magellan-destination="appointments">
+<div class="row" data-magellan-destination="appointments" >
+<div class="small-10 small-centered columns full-height">
+<h2> Appointments </h2>
+<h3>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium risus ac condimentum tempus. Etiam consequat sapien sit amet eros placerat consequat. Donec convallis nulla magna, ut interdum nunc rhoncus tempor. Maecenas facilisis nisl sit amet orci sodales malesuada. Nam sodales vel lorem id iaculis. Ut imperdiet, neque posuere posuere gravida, urna nibh interdum odio, et congue orci leo id est. Nulla metus risus, dignissim sed odio faucibus, accumsan varius sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
 </h3>
 </br>
@@ -61,12 +68,35 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium risus ac con
 <span>jessica@cobblehilltherapy.com </span>	
 </footer>
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" ></script>
+<!-- Review the foundation javascript files (magellen vs jquery vs foundation.min vs foundation - changes fix nav) b/c they seem to be not acting as expected-->
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script  language="javascript" type="text/javascript" src="CHTjavascript.js"></script>
-<script  language="javascript" type="text/javascript" src="js/foundation.min.js"></script>
+
+ <script src="foundation/js/vendor/jquery.js"></script>
+ <script src="foundation/js/vendor/fastclick.js"></script>
+ <script  language="javascript" type="text/javascript" src="foundation/js/foundation.min.js"></script>
+ <!-- <script src="foundation/js/foundation/foundation.js"></script>
+<script src="foundation/js/foundation/foundation.magellan.js"></script>-->
+
+<!--<script  language="javascript" type="text/javascript" src="foundation/js/foundation.min.js"></script>
+<script  language="javascript" type="text/javascript" src="foundation/js/foundation/foundation.magellan.js"></script>-->
+
+<!--<script type="text/javascript">
+$(document).foundation();
+//$('#scope').foundation();
+</script> -->
+
+<!-- seem to be having the same issue as this person http://stackoverflow.com/questions/20904137/zurb-foundation-5-magellan-not-setting-the-active-class-->
 
 <script type="text/javascript">
-$(document).foundation();
-</script>
+$(document).foundation({
+        magellan : {
+           active_class: 'active',
+           threshold: 0
+        }
+    });
+</script> 
+
 </body>
 </html>
