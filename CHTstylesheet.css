@@ -3,7 +3,7 @@ html, body {
 }
 
 .full-height {
-	margin-top: 6%;
+	
 
 }
 
@@ -12,8 +12,20 @@ html, body {
 }
 
 .active2 {
-	background-color: black;
+	background-color: none;
+	font-weight: bold;
 }
+
+.active2::after {
+	content: "";
+	position: relative;
+	bottom: -15px;
+	border-width: 15px 15px 0;
+	border-style: solid;
+	border-color: rgba(159, 208, 203, 1) transparent;
+	width: 0;
+}
+
 
 dl.sub-nav {
 	display: inline-block;
@@ -32,3 +44,5 @@ footer {
 footer span {
 
 }
+
+/* green hex:9fd0cb*/

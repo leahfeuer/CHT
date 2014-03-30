@@ -12,6 +12,8 @@ if(fullHeight>contentHeight) {
 $(".full-height").css( "height" , fullHeight);
 }
 
+
+
 /*
 {
   // specify the class used for active sections

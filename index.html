@@ -14,51 +14,63 @@
 
 <!--add container class back ?-->
 
-<div data-magellan-expedition="fixed" class="mynav">
+<div data-magellan-expedition="fixed" class="mynav" >
 	<h1> Cobble Hill Therapy </h1>
   <dl id="magellanTopNav" class="sub-nav">
     <dd data-magellan-arrival="about">
     	<a href="#about">About</a>
     </dd>
-    <dd data-magellan-arrival="jess">
-    	<a href="#jess">Jessica Vogel</a>
+    <dd data-magellan-arrival="fees">
+    	<a href="#fees">Scheduling & Fees</a>
     </dd>
-    <dd data-magellan-arrival="appointments">
-    	<a href="#appointments">Appointments</a>
+    <dd data-magellan-arrival="contact">
+    	<a href="#contact">Contact</a>
     </dd>
   </dl>
 </div>
 
 <a name="about"></a>
 <div class="row" data-magellan-destination="about">
-<div class="small-10 small-centered columns full-height">
-<h2> About </h2>
-<h3 class="content">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium risus ac condimentum tempus. Etiam consequat sapien sit amet eros placerat consequat. Donec convallis nulla magna, ut interdum nunc rhoncus tempor. Maecenas facilisis nisl sit amet orci sodales malesuada. Nam sodales vel lorem id iaculis. Ut imperdiet, neque posuere posuere gravida, urna nibh interdum odio, et congue orci leo id est. Nulla metus risus, dignissim sed odio faucibus, accumsan varius sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-</h3>
-</br>
+<div class="small-12 small-centered columns full-height">
+<h3> About Jessica </h3>
+<p>I am a licensed psychotherapist in private practice, based in Downtown Brooklyn. I specialize in the treatment of anxiety, depression, perinatal issues, guilt, stress, life transitions, and interpersonal relationships. I also have extensive experience working with adolescents for stress management, coping skills, behavior management and trauma/PTSD.
+<p> I received my undergraduate degree in Psychology from Brown University and my Masters degree in Social Work from Columbia University. My approach to therapy is integrative, drawing largely from a Cognitive Behavioral Therapy perspective; however, I individually tailor each treatment plan according to your specific needs.
+<p>I appreciate the commitment and energy that it takes to engage in therapy and aim to provide a safe, objective, compassionate, and trusting environment to help individuals improve their lives and maximize their goals. I encourage the exploration of past experiences and current thought patterns. In recognizing how experiences and thoughts inform our moods and behaviors, we can work toward desired change.
 </div>
 </div>
 
-<a name="jess"></a>
-<div class="row" data-magellan-destination="jess" >
-<div class="small-10 small-centered columns full-height">
-<h2> Jess </h2>
-<h3>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium risus ac condimentum tempus. Etiam consequat sapien sit amet eros placerat consequat. Donec convallis nulla magna, ut interdum nunc rhoncus tempor. Maecenas facilisis nisl sit amet orci sodales malesuada. Nam sodales vel lorem id iaculis. Ut imperdiet, neque posuere posuere gravida, urna nibh interdum odio, et congue orci leo id est. Nulla metus risus, dignissim sed odio faucibus, accumsan varius sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-</h3>
-</br>
+<a name="fees"></a>
+<div class="row" data-magellan-destination="fees" >
+<div class="small-12 small-centered columns full-height">
+<h3> Scheduling & Fees </h3>
+<p>To schedule an appointment/consultation, please contact me by phone or e-mail to arrange a time to meet. My confidential phone line is 718-395-6687 and my e-mail is Jessica@cobblehilltherapy.com. 
+
+<h3>Cancellation Policy </h3>
+<p>Please understand that if you do not show up for your scheduled appointment, and you have not notified me at least 24 hours in advance, you will be required to pay the cost of the session.
+
+ <h3>Payment</h3>
+<p>Payment is due at the end of each session. Payment can be made via cash, check, money order, or by credit card. 
+
+ <h3>Reduced Fee/Sliding Scale</h3>
+
+<p>Reduced fee services are available on a limited basis. Please inquire about exact fees based on your specific financial needs.
+
 </div>
 </div>
 
-<a name="appointments"></a>
-<div class="row" data-magellan-destination="appointments" >
-<div class="small-10 small-centered columns full-height">
-<h2> Appointments </h2>
-<h3>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium risus ac condimentum tempus. Etiam consequat sapien sit amet eros placerat consequat. Donec convallis nulla magna, ut interdum nunc rhoncus tempor. Maecenas facilisis nisl sit amet orci sodales malesuada. Nam sodales vel lorem id iaculis. Ut imperdiet, neque posuere posuere gravida, urna nibh interdum odio, et congue orci leo id est. Nulla metus risus, dignissim sed odio faucibus, accumsan varius sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-</h3>
-</br>
+<a name="contact"></a>
+<div class="row" data-magellan-destination="contact" >
+<div class="small-12 small-centered columns full-height">
+<h3> Contact </h3>
+<p>Please call or email to schedule an appointment. I can be reached by phone at 718-395-6687 or by email at Jessica@cobblehilltherapy.com. 
+
+<p>Cobble Hill Therapy is located in Downtown Brooklyn at</br>
+26 Court Street</br>
+Suite 504</br>
+Brooklyn, NY 11242</br>
+
+<p>It is conveniently near the 2,3,4,5,A,C,F, and R trains.
+
 </div>
 </div>
 
@@ -89,14 +101,14 @@ $(document).foundation();
 
 <!-- seem to be having the same issue as this person http://stackoverflow.com/questions/20904137/zurb-foundation-5-magellan-not-setting-the-active-class-->
 
+
 <script type="text/javascript">
-$(document).foundation({
-        magellan : {
-           active_class: 'active',
-           threshold: 0
-        }
-    });
-</script> 
+$(document).foundation('magellan-expedition', {
+  active_class: 'active2',
+  destination_threshold: 200,
+});
+</script>
+
 
 </body>
 </html>
