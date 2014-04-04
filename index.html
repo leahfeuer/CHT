@@ -14,19 +14,23 @@
 
 <!--add container class back ?-->
 
+ 
 <div data-magellan-expedition="fixed" class="mynav" >
-	<h1> Cobble Hill Therapy </h1>
-  <dl id="magellanTopNav" class="sub-nav">
-    <dd data-magellan-arrival="about">
-    	<a href="#about">About</a>
-    </dd>
-    <dd data-magellan-arrival="fees">
-    	<a href="#fees">Scheduling & Fees</a>
-    </dd>
-    <dd data-magellan-arrival="contact">
-    	<a href="#contact">Contact</a>
-    </dd>
-  </dl>
+    <div class="hide-for-small">
+      <!--h1 is messing up resize / duplicate-->
+       <h1> Cobble Hill Therapy </h1>
+    <dl id="magellanTopNav" class="sub-nav">
+      <dd data-magellan-arrival="about">
+      	<a href="#about">About</a>
+      </dd>
+      <dd data-magellan-arrival="fees">
+      	<a href="#fees">Scheduling & Fees</a>
+      </dd>
+      <dd data-magellan-arrival="contact">
+      	<a href="#contact">Contact</a>
+      </dd>
+    </dl>
+    </div>
 </div>
 
 <a name="about"></a>
@@ -77,10 +81,18 @@ Brooklyn, NY 11242</br>
 </div>
 
 <footer>
-<span> (tel.) 973 819 4725</span>
-<span>26 Court Street, Suite 504 Brooklyn, New York 11242</span>
-<span>jessica@cobblehilltherapy.com </span>	
+<div class='row'>
+<div class="medium-3 columns">
+  <span class="hide-for-small" class="left"> (tel.) 973 819 4725 </span>
+</div>
+<div class="medium-6 columns">
+  <span class="hide-for-small" class="middle"> 26 Court Street, Suite 504 Brooklyn, New York 11242</span>
+</div>
+<div class="medium-3 columns">
+  <span class="hide-for-small" class="right"> jessica@cobblehilltherapy.com  </span>
+</div>
 </footer>
+</div>
 
 <!-- Review the foundation javascript files (magellen vs jquery vs foundation.min vs foundation - changes fix nav) b/c they seem to be not acting as expected-->
 
@@ -108,6 +120,7 @@ $(document).foundation();
 $(document).foundation('magellan-expedition', {
   active_class: 'active2',
   destination_threshold: 200,
+  throttle_delay: 100, 
 });
 </script>
 

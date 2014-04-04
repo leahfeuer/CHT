@@ -5,12 +5,25 @@ $( document ).ready(function() {
 
 });
 
+//if javascript is active, set div height really big, else default to regular
 
+
+function divheight () {
 var contentHeight = $(".content").height();
 var fullHeight = $(window).height(); 
 if(fullHeight>contentHeight) {
 $(".full-height").css( "height" , fullHeight);
 }
+//not sure if else statement is correct to set class height back to auto
+else{
+$(".full-height").css( "auto" , fullHeight);
+}};
+
+
+
+$(document).ready(divheight);
+
+$(window).resize(divheight);
 
 
 

@@ -3,12 +3,14 @@ html, body {
 }
 
 .full-height {
-	
+	height: 1000px;
 
 }
 
 .mynav{
 	text-align: center;
+	max-height: 150px;
+
 }
 
 .active2 {
@@ -37,12 +39,19 @@ footer {
 	height:45px;
 	bottom:0px;
 	background-color: rgba(159, 208, 203, .85);
-	text-align: center;
 	vertical-align: middle;
 }
 
-footer span {
+.left{
+	text-align: left;
+}
+.middle{
+	text-align: middle;
 
 }
+.right{
+	text-align: right;
+}
+
 
 /* green hex:9fd0cb*/
