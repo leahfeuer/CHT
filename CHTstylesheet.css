@@ -1,5 +1,15 @@
+
 html, body {
   height: 100%;
+  font-family: 'Josefin Sans';
+}
+
+div, dd, a, p, h1, h2, h3, h4, h5, h6 {
+	font-family: 'Josefin Sans';
+}
+
+h1 {
+	 font-family: 'Josefin Sans';
 }
 
 .full-height {
@@ -7,7 +17,7 @@ html, body {
 
 }
 
-.mynav{
+.mynav{ 
 	text-align: center;
 	max-height: 150px;
 
@@ -40,6 +50,9 @@ footer {
 	bottom:0px;
 	background-color: rgba(159, 208, 203, .85);
 	vertical-align: middle;
+}
+footer div.row {
+	margin-top: 15px;
 }
 
 .left{

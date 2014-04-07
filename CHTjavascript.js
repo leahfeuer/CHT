@@ -15,6 +15,8 @@ if(fullHeight>contentHeight) {
 $(".full-height").css( "height" , fullHeight);
 }
 //not sure if else statement is correct to set class height back to auto
+//if I want to maintain zurb styling for height - ex. do they do anything for small screens? --
+//make a new class for 1000px and then just add fullheight and remove 1000px class 
 else{
 $(".full-height").css( "auto" , fullHeight);
 }};
