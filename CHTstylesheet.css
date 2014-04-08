@@ -8,8 +8,8 @@ div, dd, a, p, h1, h2, h3, h4, h5, h6 {
 	font-family: 'Josefin Sans';
 }
 
-h1 {
-	 font-family: 'Josefin Sans';
+h3 {
+	text-align: center;
 }
 
 .full-height {
