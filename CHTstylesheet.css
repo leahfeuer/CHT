@@ -10,10 +10,31 @@ div, dd, a, p, h1, h2, h3, h4, h5, h6 {
 
 h3 {
 	text-align: center;
+	padding-bottom: 2%;
+}
+
+.greentext {
+color: rgba(159, 208, 203, 1);
+}
+
+p {
+	font-size: 1.25rem;
+	line-height: 2;
+}
+
+/* Not getting picked up*/
+.sub-nav dt, .sub-nav dd, .sub-nav li  {
+font-size: 1.25rem;
+margin-left: none;
 }
 
 .full-height {
 	height: 1000px;
+	display: flex;
+}
+
+.content {
+	margin:auto;
 
 }
 
@@ -38,9 +59,21 @@ h3 {
 	width: 0;
 }
 
-
 dl.sub-nav {
 	display: inline-block;
+}
+
+/*.outer {
+	display: table;
+}
+
+.vertmiddle {
+	display: table-cell;
+    vertical-align: middle;
+}*/
+
+.fees .medium-4 {
+
 }
 
 footer {
@@ -48,9 +81,14 @@ footer {
 	width:100%;
 	height:45px;
 	bottom:0px;
-	background-color: rgba(159, 208, 203, .85);
 	vertical-align: middle;
+	background-color: rgba(159, 208, 203, 1);
 }
+
+.contact {
+	background-color: rgba(159, 208, 203, 1);
+}
+
 footer div.row {
 	margin-top: 15px;
 }
@@ -65,6 +103,11 @@ footer div.row {
 .right{
 	text-align: right;
 }
+
+.contact .small-12 {
+	text-align: center;
+}
+
 
 
 /* green hex:9fd0cb*/
