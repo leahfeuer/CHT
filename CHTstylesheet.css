@@ -13,6 +13,17 @@ h3 {
 	padding-bottom: 2%;
 }
 
+p {
+	font-size: 1.25rem;
+	line-height: 2;
+}
+
+/* Not getting picked up*/
+.sub-nav dt, .sub-nav dd, .sub-nav li  {
+font-size: 1.25rem;
+margin-left: none;
+}
+
 .full-height {
 	height: 1000px;
 	display: flex;
@@ -87,5 +98,7 @@ footer div.row {
 #contact {
 	text-align: center;
 }
+
+
 
 /* green hex:9fd0cb*/
