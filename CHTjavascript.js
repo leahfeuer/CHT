@@ -7,12 +7,14 @@ $( document ).ready(function() {
 
 //if javascript is active, set div height really big, else default to regular
 
+var contentHeight = $(".main").height();
+var fullHeight = $(window).height(); 
+var marginHeight = (fullHeight-contentHeight)/2
 
 function divheight () {
-var contentHeight = $(".content").height();
-var fullHeight = $(window).height(); 
 if(fullHeight>contentHeight) {
-$(".full-height").css( "height" , fullHeight);
+$(".full-height").css( "height" , fullHeight-200);
+//$(".vertmiddle").css( "margin-top", marginHeight);
 }
 //not sure if else statement is correct to set class height back to auto
 //if I want to maintain zurb styling for height - ex. do they do anything for small screens? --
@@ -20,6 +22,7 @@ $(".full-height").css( "height" , fullHeight);
 else{
 $(".full-height").css( "auto" , fullHeight);
 }};
+
 
 
 

@@ -10,10 +10,16 @@ div, dd, a, p, h1, h2, h3, h4, h5, h6 {
 
 h3 {
 	text-align: center;
+	padding-bottom: 2%;
 }
 
 .full-height {
 	height: 1000px;
+	display: flex;
+}
+
+.content {
+	margin:auto;
 
 }
 
@@ -38,10 +44,22 @@ h3 {
 	width: 0;
 }
 
+.home {
+	background-image: url('20140119_121416.jpg')
+}
 
 dl.sub-nav {
 	display: inline-block;
 }
+
+/*.outer {
+	display: table;
+}
+
+.vertmiddle {
+	display: table-cell;
+    vertical-align: middle;
+}*/
 
 footer {
 	position: fixed;
@@ -66,5 +84,8 @@ footer div.row {
 	text-align: right;
 }
 
+#contact {
+	text-align: center;
+}
 
 /* green hex:9fd0cb*/
