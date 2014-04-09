@@ -11,7 +11,7 @@ var contentHeight = $(".main").height();
 var fullHeight = $(window).height(); 
 var marginHeight = (fullHeight-contentHeight)/2
 
-function divheight () {
+var divheight = function () {
 if(fullHeight>contentHeight) {
 $(".full-height").css( "height" , fullHeight-200);
 //$(".vertmiddle").css( "margin-top", marginHeight);
@@ -25,10 +25,13 @@ $(".full-height").css( "auto" , fullHeight);
 
 
 
+$(document).ready( function (){
+  divheight ();
+});
 
-$(document).ready(divheight);
-
-$(window).resize(divheight);
+$(window).resize( function (){
+  divheight ();
+});
 
 
 
