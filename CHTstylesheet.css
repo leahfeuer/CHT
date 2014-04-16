@@ -8,6 +8,10 @@ div, dd, a, p, h1, h2, h3, h4, h5, h6 {
 	font-family: 'Josefin Sans';
 }
 
+h1{
+	font-weight: bold;
+}
+
 h3 {
 	text-align: center;
 	padding-bottom: 2%;
@@ -19,6 +23,10 @@ h2 {
 
 .greentext {
 color: rgba(159, 208, 203, 1);
+}
+
+.greytext {
+color: #737373;
 }
 
 p {
