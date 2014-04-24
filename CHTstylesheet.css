@@ -1,15 +1,17 @@
 
 html, body {
   height: 100%;
-  font-family: 'Josefin Sans';
+  font-family: 'Droid Serif';
 }
 
 div, dd, a, p, h1, h2, h3, h4, h5, h6 {
-	font-family: 'Josefin Sans';
+	font-family: 'Droid Serif';
 }
 
+
+
 h1{
-	font-weight: bold;
+	font-family: 'Raleway';
 }
 
 h3 {
@@ -18,7 +20,7 @@ h3 {
 }
 
 h2 {
-	text-align: center;
+	line-height: 1.5;
 }
 
 .greentext {
@@ -30,7 +32,12 @@ color: #737373;
 }
 
 .greenbkgrd {
-		background-color: rgba(159, 208, 203, 1);
+	background-color: rgba(159, 208, 203, 1);
+	-webkit-transition: all 0.2s ease-in-out;
+   	-moz-transition: all 0.2s ease-in-out;
+   	-o-transition: all 0.2s ease-in-out;
+   	-ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 
@@ -61,6 +68,7 @@ margin-left: none;
 
 .content {
 	margin:auto;
+
 
 }
 

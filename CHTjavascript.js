@@ -14,7 +14,7 @@ var marginHeight = (fullHeight-contentHeight)/2
 
 var divheight = function () {
 if(fullHeight>contentHeight) {
-$(".full-height").css( "height" , fullHeight-200);
+$(".full-height").css( "height" , fullHeight-150);
 //$(".vertmiddle").css( "margin-top", marginHeight);
 }
 //not sure if else statement is correct to set class height back to auto
@@ -44,7 +44,7 @@ $(document).ready( function (){
 $(document).ready( function (){
  var nav = $('.mynav');
  $(window).scroll(function (){
-    if ($(this).scrollTop () > fullHeight){
+    if ($(this).scrollTop () > fullHeight-160){
       nav.addClass("whitebkgrd");
      
 
