@@ -11,6 +11,7 @@ var contentHeight = $(".main").height();
 var fullHeight = $(window).height(); 
 var marginHeight = (fullHeight-contentHeight)/2
 
+
 var divheight = function () {
 if(fullHeight>contentHeight) {
 $(".full-height").css( "height" , fullHeight-200);
@@ -23,15 +24,44 @@ else{
 $(".full-height").css( "auto" , fullHeight);
 }};
 
+//HELP
+/*
+var styleNav = function () {
+  $(window).scroll(function (){
+    if ($(this).scrollTop () > fullHeight){
+      nav.addClass("whitegreen");
+    } else {
+      nav.removClass("whitegreen");
+    }
+  });
+};*/
 
 
 $(document).ready( function (){
   divheight ();
 });
 
+$(document).ready( function (){
+ var nav = $('.mynav');
+ $(window).scroll(function (){
+    if ($(this).scrollTop () > fullHeight){
+      nav.addClass("whitebkgrd");
+     
+
+    } else {
+      nav.removeClass("whitebkgrd");
+    
+     
+    }
+  });
+});
+
 $(window).resize( function (){
   divheight ();
 });
+
+
+
 
 
 

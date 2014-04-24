@@ -29,6 +29,15 @@ color: rgba(159, 208, 203, 1);
 color: #737373;
 }
 
+.greenbkgrd {
+		background-color: rgba(159, 208, 203, 1);
+}
+
+
+.whitebkgrd {
+	background-color: white;
+}
+
 p {
 	font-size: 1.25rem;
 	line-height: 2;
@@ -48,6 +57,7 @@ margin-left: none;
 	height: 1000px;
 	display: flex;
 }
+
 
 .content {
 	margin:auto;
