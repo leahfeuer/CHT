@@ -61,6 +61,11 @@ color: #737373;
 	font-style: italic;
 
 }
+
+.large-4 {
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
 p {
 	font-size: 1.25em;
 	line-height: 2;
@@ -127,6 +132,16 @@ dl.sub-nav {
 	display: inline-block;
 }
 
+.eyebrow {
+	font-size: 1rem;
+	line-height: .2;
+
+}
+
+a:hover {
+	color: #6BC1B6;
+
+}
 /*.outer {
 	display: table;
 }
@@ -136,9 +151,6 @@ dl.sub-nav {
     vertical-align: middle;
 }*/
 
-.fees .medium-4 {
-
-}
 
 footer {
 	position: fixed;
