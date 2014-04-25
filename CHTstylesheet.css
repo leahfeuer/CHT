@@ -10,17 +10,28 @@ div, dd, a, p, h1, h2, h3, h4, h5, h6 {
 
 
 
-h1{
+.greenbkgrd h2, .sub-nav dd a {
+	color: white;
 	font-family: 'Raleway';
+}
+
+.whitebkgrd h2 {
+	font-family: 'Raleway';
+	color: rgba(159, 208, 203, 1);
+}
+
+.whitebkgrd .sub-nav dd a{
+	color:black;
 }
 
 h3 {
 	text-align: center;
 	padding-bottom: 2%;
+
 }
 
-h2 {
-	line-height: 1.5;
+h1.subheader {
+	color: white;
 }
 
 .greentext {
@@ -45,8 +56,11 @@ color: #737373;
 	background-color: white;
 }
 
+#welcome {
+
+}
 p {
-	font-size: 1.25rem;
+	font-size: 1.25em;
 	line-height: 2;
 }
 
@@ -54,11 +68,19 @@ p {
 	
 }
 
-/* Not getting picked up*/
-.sub-nav dt, .sub-nav dd, .sub-nav li  {
+
+.sub-nav dd {
 font-size: 1.25rem;
 margin-left: none;
+
+
 }
+
+.sub-nav dt a:hover, .sub-nav dd a:hover, .sub-nav li a:hover {
+
+}
+
+
 
 .full-height {
 	height: 1000px;
@@ -119,10 +141,12 @@ dl.sub-nav {
 footer {
 	position: fixed;
 	width:100%;
-	height:45px;
+	height:60px;
 	bottom:0px;
 	vertical-align: middle;
 	background-color: rgba(159, 208, 203, 1);
+	
+	font-family: 'Raleway';
 }
 
 .contact {
@@ -130,7 +154,8 @@ footer {
 }
 
 footer div.row {
-	margin-top: 15px;
+	margin-top: 25px;
+	color: white;
 }
 
 .left{
