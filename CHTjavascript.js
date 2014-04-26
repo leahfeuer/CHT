@@ -60,16 +60,21 @@ function initialize() {
 
   // Create a map object, and include the MapTypeId to add
   // to the map type control.
+  var myLatlng = new google.maps.LatLng(40.6932942,-73.9908107);
   var mapOptions = {
-    center: new google.maps.LatLng(40.6932942,-73.9908107), 
+    center: myLatlng, 
     zoom: 17
   };
   var map = new google.maps.Map(document.getElementById("map-canvas"), 
     mapOptions);
 
+ var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: 'Cobble Hill Therapy'});
 //Associate the styled map with the MapTypeId and set it to display.
 
-    map.mapTypes.set('map_style', styledMap);
+  map.mapTypes.set('map_style', styledMap);
   map.setMapTypeId('map_style');
   };
   
