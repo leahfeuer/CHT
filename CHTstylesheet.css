@@ -8,7 +8,10 @@ div, dd, a, p, h1, h2, h3, h4, h5, h6 {
 	font-family: 'Droid Serif';
 }
 
+#map-canvas { 
+height:400px;
 
+}
 
 .greenbkgrd h2, .sub-nav dd a {
 	color: white;
@@ -187,6 +190,9 @@ footer div.row {
 	text-align: center;
 }
 
+.contact h3 {
+	text-align: center;
+}
 
 
 /* green hex:9fd0cb*/
