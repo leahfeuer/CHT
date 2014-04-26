@@ -9,7 +9,7 @@ $( document ).ready(function() {
 
 var contentHeight = $(".main").height();
 var fullHeight = $(window).height(); 
-var marginHeight = (fullHeight-contentHeight)/2
+var marginHeight = (fullHeight-contentHeight)/2;
 
 
 var divheight = function () {
@@ -36,8 +36,32 @@ var styleNav = function () {
   });
 };*/
 
+var navcolor = function (){
+  var nav = $('.mynav');
+  if ($(this).scrollTop () > fullHeight-160){
+      nav.addClass("whitebkgrd");
+    } else {
+      nav.removeClass("whitebkgrd");    
+    }
+  };
+
 
 $(document).ready( function (){
+  divheight ();
+  navcolor ();
+});
+
+$(window).resize( function (){
+  divheight ();
+});
+
+$(window).scroll( function (){
+  navcolor ();
+});
+
+
+
+/*$(document).ready( function (){
   divheight ();
 });
 
@@ -54,11 +78,8 @@ $(document).ready( function (){
      
     }
   });
-});
+});*/
 
-$(window).resize( function (){
-  divheight ();
-});
 
 
 
