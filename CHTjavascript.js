@@ -21,7 +21,7 @@ $(".full-height").css( "height" , fullHeight-150);
 //if I want to maintain zurb styling for height - ex. do they do anything for small screens? --
 //make a new class for 1000px and then just add fullheight and remove 1000px class 
 else{
-$(".full-height").css( "auto" , fullHeight);
+$(".full-height").css( "height" , "auto");
 }};
 
 //HELP

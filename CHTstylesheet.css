@@ -35,6 +35,11 @@ h3 {
 
 h1.subheader {
 	color: white;
+	-webkit-transition: all 0.2s ease-in-out;
+   	-moz-transition: all 0.2s ease-in-out;
+   	-o-transition: all 0.2s ease-in-out;
+   	-ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .greentext {
@@ -93,7 +98,7 @@ margin-left: none;
 
 
 .full-height {
-	min-height: 1000;
+	height: 15000px;
 	display: flex;
 }
 
@@ -168,7 +173,9 @@ footer {
 
 .contact {
 	background-color: rgba(159, 208, 203, 1);
+	color: white;
 }
+
 
 footer div.row {
 	margin-top: 25px;
@@ -192,6 +199,7 @@ footer div.row {
 
 .contact h3 {
 	text-align: center;
+	color: white;
 }
 
 
